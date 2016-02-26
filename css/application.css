@@ -166,15 +166,23 @@ footer {
       .blogContainer:last-child {
         margin-right: 0; } }
 
-.sidebarContainer {
+.sideBarContainer {
   float: left;
   display: block;
   margin-right: 2.35765%;
   width: 31.76157%;
   padding: 2.35765%;
   background-color: white; }
-  .sidebarContainer:last-child {
+  .sideBarContainer:last-child {
     margin-right: 0; }
+  @media (max-width: 1024px) {
+    .sideBarContainer {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 48.82117%; }
+      .sideBarContainer:last-child {
+        margin-right: 0; } }
 
 article {
   padding: 2em 0;
@@ -189,12 +197,12 @@ aside {
   color: #656565;
   font-size: 12px;
   border-bottom: 1px solid #323232;
-  height: 17vh;
-  padding: 25px; }
+  height: 15vh;
+  padding-top: 20px; }
   aside img {
     display: inline-block;
     height: auto;
-    max-width: 15%;
+    max-width: 50%;
     float: left;
     padding-right: 10px; }
 
@@ -208,7 +216,7 @@ aside {
       margin-bottom: 0; } }
 
 .labelCloud {
-  height: 20vh; }
+  height: 23vh; }
   .labelCloud .labelTag {
     float: left;
     margin: 5px; }
@@ -221,7 +229,7 @@ aside {
       margin-right: 15px; } }
 
 .blogArchive {
-  height: 20vh; }
+  height: 17vh; }
   .blogArchive th {
     border-bottom: 1px solid black; }
   .blogArchive td {
@@ -238,7 +246,7 @@ aside {
   font-size: 12px; }
 .subscribe form input {
   background-color: #323232;
-  width: 25%;
+  width: 100%;
   height: 3em;
   border-radius: 5px;
   color: white; }
@@ -248,7 +256,7 @@ aside {
   font-size: 15px;
   background-color: #28B4FC;
   text-transform: uppercase;
-  width: 25%;
+  width: 100%;
   letter-spacing: 2px;
   padding: 10px;
   border-radius: 5px; }
@@ -257,5 +265,13 @@ aside {
     margin-top: 8em;
     margin-left: 2.5em;
     height: 35vh; } }
+
+#owl-demo .item {
+  margin: 3px; }
+
+#owl-demo .item img {
+  display: block;
+  width: 100%;
+  height: auto; }
 
 /*# sourceMappingURL=application.css.map */

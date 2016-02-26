@@ -16,11 +16,14 @@
     @include span-columns(12);
   }
 }
-.sidebarContainer {
+.sideBarContainer{
   @include span-columns(4);
   @include pad();
 
   background-color: $white;
+  @media (max-width: 1024px) {
+    @include span-columns(6);
+  }
 }
 
 article {
@@ -37,13 +40,13 @@ article {
 aside {
   @include fontBasics('Merriweather', $color: lighten($mediumgrey, 20%), $font-size: 12px);
   border-bottom: 1px solid $mediumgrey;
-  height: 17vh;
-  padding: 25px;
+  height: 15vh;
+  padding-top: 20px;
 
   img {
     display: inline-block;
     height: auto;
-    max-width: 15%;
+    max-width: 50%;
     float: left;
     padding-right: 10px;
     &:hover {
@@ -67,7 +70,7 @@ aside {
 
 .labelCloud {
   @extend %marginTop;
-  height: 20vh;
+  height: 23vh;
   .labelTag {
     float: left;
     margin: 5px;
@@ -83,7 +86,7 @@ aside {
 
 .blogArchive {
   @extend %marginTop;
-  height: 20vh;
+  height: 17vh;
 
   th {
     border-bottom: 1px solid black;
@@ -111,7 +114,7 @@ aside {
   form {
     input {
       background-color: $mediumgrey;
-      width: 25%;
+      width: 100%;
       height: 3em;
       border-radius: 5px;
       color: $white;
@@ -119,7 +122,7 @@ aside {
     button {
       @include fontBasics("Montserrat", $font-size: 15px, $color: $white, $background-color: $lightblue);
       text-transform: uppercase;
-      width: 25%;
+      width: 100%;
       letter-spacing: 2px;
       padding: 10px;
       border-radius: 5px;
