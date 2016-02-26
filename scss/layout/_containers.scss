@@ -8,11 +8,13 @@
   background-color: $white;
 
   img {
-    height: 47vh;
+    display: inline-block;
+    height: auto;
+    max-width: 100%;
   }
 }
 .sidebarContainer {
-  @include span-columns(4);
+  @include span-columns(2);
   @include pad();
 
   background-color: $white;
@@ -21,6 +23,7 @@
 article {
   padding: 2em $zero;
   border-bottom: 1px dashed black;
+  margin-bottom: 1em;
 
   p {
     color: lighten($mediumgrey, 20%);
@@ -31,12 +34,13 @@ article {
 aside {
   @include fontBasics('Merriweather', $color: lighten($mediumgrey, 20%), $font-size: 12px);
   border-bottom: 1px solid $mediumgrey;
-  height: 20vh;
+  height: 17vh;
   padding: 25px;
 
   img {
-    height: 13vh;
-    width: 13vh;
+    display: inline-block;
+    height: auto;
+    max-width: 15%;
     float: left;
     padding-right: 10px;
     &:hover {
@@ -47,11 +51,13 @@ aside {
 }
 
 .connect {
+  @extend %marginTop;
   height: 25vh;
   margin-bottom: 15px;
 }
 
 .labelCloud {
+  @extend %marginTop;
   height: 20vh;
   .labelTag {
     float: left;
@@ -60,6 +66,7 @@ aside {
 }
 
 .blogArchive {
+  @extend %marginTop;
   height: 20vh;
 
   th {
@@ -74,6 +81,7 @@ aside {
   }
 }
 .subscribe {
+  @extend %marginTop;
   h4 {
     font-family: 'Oswald';
   }
@@ -86,6 +94,7 @@ aside {
       width: 25%;
       height: 3em;
       border-radius: 5px;
+      color: $white;
     }
     button {
       @include fontBasics("Montserrat", $font-size: 15px, $color: $white, $background-color: $lightblue);

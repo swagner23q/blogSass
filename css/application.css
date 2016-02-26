@@ -38,8 +38,11 @@ h2 {
   font-family: "Montserrat";
   src: url("../fonts/Montserrat-Regular.otf");
   src: url("../fonts/Montserrat-Regular.otf") format("truetype"); }
-.labelTag:hover, .button:hover, .socialMedia:hover, aside img:hover, .blogArchive td:hover {
+.labelTag:hover, .button:hover, .socialMedia:hover, .pagesHighlight:hover, .pages:hover, aside img:hover, .blogArchive td:hover {
   cursor: pointer; }
+
+.connect, .labelCloud, .blogArchive, .subscribe {
+  margin-top: 3em; }
 
 .labelTag {
   font-family: "Montserrat";
@@ -89,6 +92,21 @@ h2 {
   .socialMedia .fa {
     color: #28B4FC; }
 
+.pagesHighlight {
+  border: 1px solid black;
+  color: #F0F0F0;
+  background-color: black;
+  padding: .45em;
+  border-radius: .45em; }
+
+.pages {
+  padding: .45em;
+  border: 1px solid black;
+  border-radius: .45em; }
+  .pages:hover {
+    color: #F0F0F0;
+    background-color: black; }
+
 nav {
   font-family: "Oswald";
   background-color: #202020;
@@ -106,6 +124,13 @@ nav {
     nav li:hover {
       background-color: #323232;
       cursor: pointer; }
+
+footer {
+  font-family: "Meriweather";
+  color: #F0F0F0;
+  font-size: 16px;
+  background-color: black;
+  padding: 2em; }
 
 .overLord {
   max-width: 68em;
@@ -126,13 +151,15 @@ nav {
   .blogContainer:last-child {
     margin-right: 0; }
   .blogContainer img {
-    height: 47vh; }
+    display: inline-block;
+    height: auto;
+    max-width: 100%; }
 
 .sidebarContainer {
   float: left;
   display: block;
   margin-right: 2.35765%;
-  width: 31.76157%;
+  width: 14.70196%;
   padding: 2.35765%;
   background-color: white; }
   .sidebarContainer:last-child {
@@ -140,7 +167,8 @@ nav {
 
 article {
   padding: 2em 0;
-  border-bottom: 1px dashed black; }
+  border-bottom: 1px dashed black;
+  margin-bottom: 1em; }
   article p {
     color: #656565;
     font-size: 13px; }
@@ -150,11 +178,12 @@ aside {
   color: #656565;
   font-size: 12px;
   border-bottom: 1px solid #323232;
-  height: 20vh;
+  height: 17vh;
   padding: 25px; }
   aside img {
-    height: 13vh;
-    width: 13vh;
+    display: inline-block;
+    height: auto;
+    max-width: 15%;
     float: left;
     padding-right: 10px; }
 
@@ -185,7 +214,8 @@ aside {
   background-color: #323232;
   width: 25%;
   height: 3em;
-  border-radius: 5px; }
+  border-radius: 5px;
+  color: white; }
 .subscribe form button {
   font-family: "Montserrat";
   color: white;

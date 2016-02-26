@@ -45,3 +45,23 @@
     @extend %hover;
   }
 }
+.pagesHighlight {
+  border: 1px solid black;
+  color: $lightgrey;
+  background-color: $black;
+  padding: .45em;
+  border-radius: .45em;
+  &:hover {
+    @extend %hover;
+  }
+}
+.pages {
+  padding: .45em;
+  border: 1px solid black;
+  border-radius: .45em;
+  &:hover {
+    @extend %hover;
+    color: $lightgrey;
+    background-color: $black;
+  }
+}

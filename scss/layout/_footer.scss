@@ -1,0 +1,4 @@
+footer {
+  @include fontBasics('Meriweather', $font-size: 16px, $color: $lightgrey, $background-color: $black);
+  padding: 2em;
+}
