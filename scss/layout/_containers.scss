@@ -8,7 +8,7 @@
   background-color: $white;
 
   img {
-    height: 50vh;
+    height: 47vh;
   }
 }
 .sidebarContainer {
@@ -25,5 +25,75 @@ article {
   p {
     color: lighten($mediumgrey, 20%);
     font-size: 13px;
+  }
+}
+
+aside {
+  @include fontBasics('Merriweather', $color: lighten($mediumgrey, 20%), $font-size: 12px);
+  border-bottom: 1px solid $mediumgrey;
+  height: 20vh;
+  padding: 25px;
+
+  img {
+    height: 13vh;
+    width: 13vh;
+    float: left;
+    padding-right: 10px;
+    &:hover {
+      @extend %hover;
+    }
+  }
+
+}
+
+.connect {
+  height: 25vh;
+  margin-bottom: 15px;
+}
+
+.labelCloud {
+  height: 20vh;
+  .labelTag {
+    float: left;
+    margin: 5px;
+  }
+}
+
+.blogArchive {
+  height: 20vh;
+
+  th {
+    border-bottom: 1px solid black;
+  }
+  td {
+    color: lighten($mediumgrey, 20%);
+    &:hover {
+      @extend %hover;
+      color: $black;
+    }
+  }
+}
+.subscribe {
+  h4 {
+    font-family: 'Oswald';
+  }
+  p {
+    font-size: 12px;
+  }
+  form {
+    input {
+      background-color: $mediumgrey;
+      width: 25%;
+      height: 3em;
+      border-radius: 5px;
+    }
+    button {
+      @include fontBasics("Montserrat", $font-size: 15px, $color: $white, $background-color: $lightblue);
+      text-transform: uppercase;
+      width: 25%;
+      letter-spacing: 2px;
+      padding: 10px;
+      border-radius: 5px;
+    }
   }
 }

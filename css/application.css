@@ -38,7 +38,7 @@ h2 {
   font-family: "Montserrat";
   src: url("../fonts/Montserrat-Regular.otf");
   src: url("../fonts/Montserrat-Regular.otf") format("truetype"); }
-.labelTag:hover, .button:hover {
+.labelTag:hover, .button:hover, .socialMedia:hover, aside img:hover, .blogArchive td:hover {
   cursor: pointer; }
 
 .labelTag {
@@ -63,6 +63,31 @@ h2 {
   text-transform: uppercase;
   letter-spacing: 2px;
   margin-top: 30px; }
+
+.sideHeader {
+  font-family: "Montserrat";
+  color: white;
+  font-size: 16px;
+  background-color: #323232;
+  padding: .5em 1em;
+  text-transform: uppercase; }
+
+.blueSpace {
+  background-color: #28B4FC; }
+
+.socialMedia {
+  font-family: "Montserrat";
+  color: black;
+  font-size: 18;
+  background-color: #F9F9F9;
+  border: 1px solid #b2b2b2;
+  padding: .5em;
+  letter-spacing: 2px;
+  float: left;
+  width: 20vw;
+  margin-bottom: 5px; }
+  .socialMedia .fa {
+    color: #28B4FC; }
 
 nav {
   font-family: "Oswald";
@@ -101,7 +126,7 @@ nav {
   .blogContainer:last-child {
     margin-right: 0; }
   .blogContainer img {
-    height: 50vh; }
+    height: 47vh; }
 
 .sidebarContainer {
   float: left;
@@ -119,5 +144,57 @@ article {
   article p {
     color: #656565;
     font-size: 13px; }
+
+aside {
+  font-family: "Merriweather";
+  color: #656565;
+  font-size: 12px;
+  border-bottom: 1px solid #323232;
+  height: 20vh;
+  padding: 25px; }
+  aside img {
+    height: 13vh;
+    width: 13vh;
+    float: left;
+    padding-right: 10px; }
+
+.connect {
+  height: 25vh;
+  margin-bottom: 15px; }
+
+.labelCloud {
+  height: 20vh; }
+  .labelCloud .labelTag {
+    float: left;
+    margin: 5px; }
+
+.blogArchive {
+  height: 20vh; }
+  .blogArchive th {
+    border-bottom: 1px solid black; }
+  .blogArchive td {
+    color: #656565; }
+    .blogArchive td:hover {
+      color: black; }
+
+.subscribe h4 {
+  font-family: 'Oswald'; }
+.subscribe p {
+  font-size: 12px; }
+.subscribe form input {
+  background-color: #323232;
+  width: 25%;
+  height: 3em;
+  border-radius: 5px; }
+.subscribe form button {
+  font-family: "Montserrat";
+  color: white;
+  font-size: 15px;
+  background-color: #28B4FC;
+  text-transform: uppercase;
+  width: 25%;
+  letter-spacing: 2px;
+  padding: 10px;
+  border-radius: 5px; }
 
 /*# sourceMappingURL=application.css.map */
