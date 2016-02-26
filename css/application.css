@@ -180,7 +180,7 @@ footer {
       float: left;
       display: block;
       margin-right: 2.35765%;
-      width: 48.82117%; }
+      width: 100%; }
       .sideBarContainer:last-child {
         margin-right: 0; } }
 
@@ -205,6 +205,13 @@ aside {
     max-width: 50%;
     float: left;
     padding-right: 10px; }
+    @media (max-width: 1024px) {
+      aside img {
+        width: 25%;
+        float: none; } }
+  @media (max-width: 1024px) {
+    aside {
+      height: 25vh; } }
 
 .connect {
   height: 25vh;
@@ -212,7 +219,7 @@ aside {
   @media (max-width: 1024px) {
     .connect {
       float: left;
-      margin: 3em;
+      margin: 2em;
       margin-bottom: 0; } }
 
 .labelCloud {
@@ -225,7 +232,7 @@ aside {
       float: left;
       width: 20vw;
       height: 25vh;
-      margin-top: .41em;
+      margin-top: -.48em;
       margin-right: 15px; } }
 
 .blogArchive {
@@ -236,9 +243,6 @@ aside {
     color: #656565; }
     .blogArchive td:hover {
       color: black; }
-  @media (max-width: 1024px) {
-    .blogArchive {
-      margin-top: 3.9em; } }
 
 .subscribe h4 {
   font-family: 'Oswald'; }
@@ -262,16 +266,8 @@ aside {
   border-radius: 5px; }
 @media (max-width: 1024px) {
   .subscribe {
-    margin-top: 8em;
-    margin-left: 2.5em;
-    height: 35vh; } }
-
-#owl-demo .item {
-  margin: 3px; }
-
-#owl-demo .item img {
-  display: block;
-  width: 100%;
-  height: auto; }
+    margin-top: 10em;
+    margin-left: 2.0em;
+    width: 65%; } }
 
 /*# sourceMappingURL=application.css.map */
