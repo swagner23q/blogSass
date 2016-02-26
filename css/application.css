@@ -4,18 +4,6 @@ html {
 *, *::after, *::before {
   box-sizing: inherit; }
 
-@font-face {
-  font-family: "Crackman";
-  src: url("../fonts/crackman.ttf");
-  src: url("../fonts/crackman.ttf") format("truetype"); }
-@font-face {
-  font-family: "Oswald";
-  src: url("../fonts/Oswald-Regular.ttf");
-  src: url("../fonts/Oswald-Regular.ttf") format("truetype"); }
-@font-face {
-  font-family: "Montserrat";
-  src: url("../fonts/Montserrat-Regular.ttf");
-  src: url("../fonts/Montserrat-Regular.ttf") format("truetype"); }
 html, body {
   font-family: "Merriweather";
   color: serif;
@@ -34,8 +22,47 @@ h1 {
   padding: .5em;
   padding-left: 1.75em; }
 
-h3 {
-  font-family: 'Oswald'; }
+h2 {
+  font-family: 'Oswald';
+  margin-bottom: 0; }
+
+@font-face {
+  font-family: "Crackman";
+  src: url("../fonts/crackman.ttf");
+  src: url("../fonts/crackman.ttf") format("truetype"); }
+@font-face {
+  font-family: "Oswald";
+  src: url("../fonts/Oswald-Regular.ttf");
+  src: url("../fonts/Oswald-Regular.ttf") format("truetype"); }
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-Regular.otf");
+  src: url("../fonts/Montserrat-Regular.otf") format("truetype"); }
+.labelTag:hover, .button:hover {
+  cursor: pointer; }
+
+.labelTag {
+  font-family: "Montserrat";
+  color: white;
+  font-size: 11px;
+  background-color: #28B4FC;
+  padding: .4em;
+  text-transform: uppercase;
+  box-shadow: 1px 1px 3px black; }
+
+.postDate {
+  font-size: 10px; }
+
+.button {
+  font-family: "Montserrat";
+  color: white;
+  font-size: 13px;
+  background-color: #323232;
+  padding: 15px;
+  border-radius: 25px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-top: 30px; }
 
 nav {
   font-family: "Oswald";
@@ -74,7 +101,7 @@ nav {
   .blogContainer:last-child {
     margin-right: 0; }
   .blogContainer img {
-    height: 40vh; }
+    height: 50vh; }
 
 .sidebarContainer {
   float: left;
@@ -85,5 +112,12 @@ nav {
   background-color: white; }
   .sidebarContainer:last-child {
     margin-right: 0; }
+
+article {
+  padding: 2em 0;
+  border-bottom: 1px dashed black; }
+  article p {
+    color: #656565;
+    font-size: 13px; }
 
 /*# sourceMappingURL=application.css.map */

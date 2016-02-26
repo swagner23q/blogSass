@@ -8,7 +8,7 @@
   background-color: $white;
 
   img {
-    height: 40vh;
+    height: 50vh;
   }
 }
 .sidebarContainer {
@@ -16,4 +16,14 @@
   @include pad();
 
   background-color: $white;
+}
+
+article {
+  padding: 2em $zero;
+  border-bottom: 1px dashed black;
+
+  p {
+    color: lighten($mediumgrey, 20%);
+    font-size: 13px;
+  }
 }

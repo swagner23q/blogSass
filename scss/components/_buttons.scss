@@ -1,0 +1,23 @@
+.labelTag {
+  @include fontBasics('Montserrat', $color: $white, $font-size: 11px, $background-color: $labelblue);
+  padding: .4em;
+  text-transform: uppercase;
+  box-shadow: 1px 1px 3px black;
+  &:hover {
+    @extend %hover;
+  }
+}
+.postDate {
+  font-size: 10px;
+}
+.button {
+  @include fontBasics('Montserrat', $color: white, $font-size: 13px, $background-color: $mediumgrey);
+  padding: 15px;
+  border-radius: 25px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-top: 30px;
+  &:hover {
+    @extend %hover;
+  }
+}
