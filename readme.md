@@ -12,6 +12,7 @@ The program used to create this project is Atom, Git, and Terminal.
 The program used to create this project is ***Atom, Git, and Terminal***.
 
 To setup locally, git clone~ https://github.com/swagner23q/
+
 To view the website, go here:
 swagner23q.github.io/blogSass
 

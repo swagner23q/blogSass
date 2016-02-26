@@ -1,0 +1,19 @@
+.overLord {
+  @include outer-container();
+}
+.blogContainer {
+  @include span-columns(8);
+  @include reset-display;
+  @include pad();
+  background-color: $white;
+
+  img {
+    height: 40vh;
+  }
+}
+.sidebarContainer {
+  @include span-columns(4);
+  @include pad();
+
+  background-color: $white;
+}

@@ -1,0 +1,22 @@
+nav {
+  @include fontBasics('Oswald', $background-color: $darkgrey);
+  margin: $zero;
+  padding-left: 7.9em;
+
+  ul {
+    list-style: none;
+    margin: $zero;
+  }
+  li {
+    display: inline-block;
+    color: $white;
+    font-weight: normal;
+    margin-right: 10px;
+    padding: 1em;
+
+    &:hover {
+      background-color: $hovergrey;
+      cursor: pointer;
+    }
+  }
+}
