@@ -72,6 +72,9 @@ h2 {
   color: white;
   font-size: 16px;
   background-color: #323232;
+  background-color: #28B4FC;
+  background-image: -webkit-radial-gradient(#28B4FC, #323232);
+  background-image: radial-gradient(  #28B4FC, #323232);
   padding: .5em 1em;
   text-transform: uppercase; }
 
@@ -154,12 +157,20 @@ footer {
     display: inline-block;
     height: auto;
     max-width: 100%; }
+  @media (max-width: 1024px) {
+    .blogContainer {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 100%; }
+      .blogContainer:last-child {
+        margin-right: 0; } }
 
 .sidebarContainer {
   float: left;
   display: block;
   margin-right: 2.35765%;
-  width: 14.70196%;
+  width: 31.76157%;
   padding: 2.35765%;
   background-color: white; }
   .sidebarContainer:last-child {
@@ -190,12 +201,24 @@ aside {
 .connect {
   height: 25vh;
   margin-bottom: 15px; }
+  @media (max-width: 1024px) {
+    .connect {
+      float: left;
+      margin: 3em;
+      margin-bottom: 0; } }
 
 .labelCloud {
   height: 20vh; }
   .labelCloud .labelTag {
     float: left;
     margin: 5px; }
+  @media (max-width: 1024px) {
+    .labelCloud {
+      float: left;
+      width: 20vw;
+      height: 25vh;
+      margin-top: .41em;
+      margin-right: 15px; } }
 
 .blogArchive {
   height: 20vh; }
@@ -205,6 +228,9 @@ aside {
     color: #656565; }
     .blogArchive td:hover {
       color: black; }
+  @media (max-width: 1024px) {
+    .blogArchive {
+      margin-top: 3.9em; } }
 
 .subscribe h4 {
   font-family: 'Oswald'; }
@@ -226,5 +252,10 @@ aside {
   letter-spacing: 2px;
   padding: 10px;
   border-radius: 5px; }
+@media (max-width: 1024px) {
+  .subscribe {
+    margin-top: 8em;
+    margin-left: 2.5em;
+    height: 35vh; } }
 
 /*# sourceMappingURL=application.css.map */

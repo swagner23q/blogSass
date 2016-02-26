@@ -23,6 +23,7 @@
 }
 .sideHeader {
   @include fontBasics('Montserrat', $color: $white, $font-size: 16px, $background-color: $mediumgrey);
+  @include radial-gradient($lightblue, $mediumgrey);
   padding: .5em 1em;
   text-transform: uppercase;
 }

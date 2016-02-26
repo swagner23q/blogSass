@@ -12,9 +12,12 @@
     height: auto;
     max-width: 100%;
   }
+  @media (max-width: 1024px) {
+    @include span-columns(12);
+  }
 }
 .sidebarContainer {
-  @include span-columns(2);
+  @include span-columns(4);
   @include pad();
 
   background-color: $white;
@@ -54,6 +57,12 @@ aside {
   @extend %marginTop;
   height: 25vh;
   margin-bottom: 15px;
+
+  @media (max-width: 1024px) {
+    float: left;
+    margin: 3em;
+    margin-bottom: $zero;
+  }
 }
 
 .labelCloud {
@@ -62,6 +71,13 @@ aside {
   .labelTag {
     float: left;
     margin: 5px;
+  }
+  @media (max-width: 1024px) {
+    float: left;
+    width: 20vw;
+    height: 25vh;
+    margin-top: .41em;
+    margin-right: 15px;
   }
 }
 
@@ -79,7 +95,11 @@ aside {
       color: $black;
     }
   }
+  @media (max-width: 1024px) {
+    margin-top: 3.9em;
+  }
 }
+
 .subscribe {
   @extend %marginTop;
   h4 {
@@ -104,5 +124,10 @@ aside {
       padding: 10px;
       border-radius: 5px;
     }
+  }
+  @media (max-width: 1024px) {
+    margin-top: 8em;
+    margin-left: 2.5em;
+    height: 35vh;
   }
 }
